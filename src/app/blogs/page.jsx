@@ -9,7 +9,7 @@ const BlogsPage = async() => {
     return (
         <div className='px-10 grid grid-cols-4 w-full gap-5 mt-10'>
             {
-                blogs.map(blog =><Link blog={blog} href={`/blogs/${blog.id}`}><h1 className='border border-white-400 p-5 w-full h-full'>{blog.title}</h1></Link>)
+                blogs.map(blog =><Link key={blog.id} blog={blog} href={`/blogs/${blog.id}`}><h1 className='border border-white-400 p-5 w-full h-full'>{blog.title}</h1></Link>)
             }
         </div>
     );

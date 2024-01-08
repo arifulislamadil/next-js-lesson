@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
-import React, { memo } from "react";
 import styles from "./navbar.module.css";
 
-const Navbar = memo(() => {
+const Navbar = () => {
 
   return (
     <div
@@ -20,6 +19,6 @@ const Navbar = memo(() => {
       </div>
     </div>
   );
-});
+};
 
 export default Navbar;
